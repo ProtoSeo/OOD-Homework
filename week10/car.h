@@ -12,7 +12,7 @@ class car:public vehicle{
 		explicit car(int wheel,int speed,char* name);
 
 		char* get_car_name();
-		virtual const char* get_class_name();
+		const char* get_class_name();
 
 		void set_car_name(char* name);
 
