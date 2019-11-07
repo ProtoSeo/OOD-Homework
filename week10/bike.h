@@ -15,7 +15,7 @@ class bike:public vehicle{
 
 		int get_bike_number();
 		char* get_bike_name();
-		virtual const char* get_class_name();
+		const char* get_class_name();
 
 		void set_bike_name(char* name);
 		void set_bike_number(int number);
