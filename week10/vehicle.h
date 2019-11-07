@@ -11,7 +11,7 @@ class vehicle{
 		vehicle();
 		explicit vehicle(int wheel,int speed);
 		explicit vehicle(int wheel,int speed,bool has_name);
-		const char* get_class_name();
+		virtual const char* get_class_name();
 		int  get_wheel_number();
 		int get_max_speed();
 		bool get_has_name();
