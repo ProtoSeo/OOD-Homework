@@ -93,9 +93,7 @@ student *shared_ref::operator->() {
     // TODO: Fill it
     // _mgr이 nullptr일 경우 nullptr 반환
     // _mgr이 nullptr가 아닐 경우 _mgr의 ptr을 반환
-	if(_mgr)
-		return _mgr->ptr;
-    return nullptr;
+	return get();
 }
 
 int shared_ref::count() {
