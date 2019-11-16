@@ -40,7 +40,7 @@ int main() {
     // erase를 통해 key값에 맞는 값을 지울 수 있음
     // erase(start, end) 를 통해 start index부터 end 이전까지 제거 가능)
 	m.erase("first");
-	m.erase("second");
+	m.erase("fourth");
     if (m.size() != 2 && (m["first"] == 10 || m["fourth"] == 40)) {
         cout<<"정해진 값을 삭제해주세요."<<endl;
         result += 1;
