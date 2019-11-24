@@ -28,7 +28,7 @@ int json_dict::find(json_object* key){
 		else if (key->type() == STRING && v[i].first->type() == STRING) {
 			String* temp1 = dynamic_cast<String*>(key);
 			String* temp2 = dynamic_cast<String*>(v[i].first);
-			if (temp2->val() == ("\'" + temp1->val() + "\'") || temp2->val() == ("\"" + temp1->val() + "\"")) {
+			if (temp2->val() == temp1->val()) {
 				return i;
 			}
 		}
